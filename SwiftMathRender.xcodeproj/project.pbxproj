@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		6B025AE62732BC8500978C9B /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B025AE52732BC8500978C9B /* UIColor+Extension.swift */; };
+		6B025AE82732C2EC00978C9B /* UnicodeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B025AE72732C2EC00978C9B /* UnicodeSymbol.swift */; };
 		6BF87589273297D700FD2AA0 /* SwiftMathRender.docc in Sources */ = {isa = PBXBuildFile; fileRef = 6BF87588273297D700FD2AA0 /* SwiftMathRender.docc */; };
 		6BF8758F273297D700FD2AA0 /* SwiftMathRender.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6BF87584273297D700FD2AA0 /* SwiftMathRender.framework */; };
 		6BF87594273297D700FD2AA0 /* SwiftMathRenderTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6BF87593273297D700FD2AA0 /* SwiftMathRenderTests.swift */; };
@@ -27,6 +29,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6B025AE52732BC8500978C9B /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
+		6B025AE72732C2EC00978C9B /* UnicodeSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnicodeSymbol.swift; sourceTree = "<group>"; };
 		6BF87584273297D700FD2AA0 /* SwiftMathRender.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftMathRender.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		6BF87587273297D700FD2AA0 /* SwiftMathRender.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftMathRender.h; sourceTree = "<group>"; };
 		6BF87588273297D700FD2AA0 /* SwiftMathRender.docc */ = {isa = PBXFileReference; lastKnownFileType = folder.documentationcatalog; path = SwiftMathRender.docc; sourceTree = "<group>"; };
@@ -82,6 +86,8 @@
 				6BF87588273297D700FD2AA0 /* SwiftMathRender.docc */,
 				6BF8759E273297F400FD2AA0 /* MathUIView.swift */,
 				6BF875A027329EAA00FD2AA0 /* MathFont.swift */,
+				6B025AE52732BC8500978C9B /* UIColor+Extension.swift */,
+				6B025AE72732C2EC00978C9B /* UnicodeSymbol.swift */,
 			);
 			path = SwiftMathRender;
 			sourceTree = "<group>";
@@ -214,6 +220,8 @@
 				6BF8759F273297F400FD2AA0 /* MathUIView.swift in Sources */,
 				6BF87589273297D700FD2AA0 /* SwiftMathRender.docc in Sources */,
 				6BF875A127329EAA00FD2AA0 /* MathFont.swift in Sources */,
+				6B025AE82732C2EC00978C9B /* UnicodeSymbol.swift in Sources */,
+				6B025AE62732BC8500978C9B /* UIColor+Extension.swift in Sources */,
 				6BF875A42732A99F00FD2AA0 /* MathFontTable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
