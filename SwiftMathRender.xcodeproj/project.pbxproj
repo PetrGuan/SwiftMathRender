@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		6B025AE62732BC8500978C9B /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B025AE52732BC8500978C9B /* UIColor+Extension.swift */; };
 		6B025AE82732C2EC00978C9B /* UnicodeSymbol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B025AE72732C2EC00978C9B /* UnicodeSymbol.swift */; };
+		6B3ABC32273DF9B600C40026 /* MathListBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3ABC31273DF9B600C40026 /* MathListBuilder.swift */; };
+		6B3ABC34273DFA2900C40026 /* ParseError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B3ABC33273DFA2900C40026 /* ParseError.swift */; };
 		6B748DFA27395DC30067DE88 /* MathAtomFactory.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B748DF927395DC30067DE88 /* MathAtomFactory.swift */; };
 		6B748DFC27395EEF0067DE88 /* MathAtomType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B748DFB27395EEF0067DE88 /* MathAtomType.swift */; };
 		6B748DFE273960230067DE88 /* MathFontStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B748DFD273960230067DE88 /* MathFontStyle.swift */; };
@@ -37,6 +39,8 @@
 /* Begin PBXFileReference section */
 		6B025AE52732BC8500978C9B /* UIColor+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		6B025AE72732C2EC00978C9B /* UnicodeSymbol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UnicodeSymbol.swift; sourceTree = "<group>"; };
+		6B3ABC31273DF9B600C40026 /* MathListBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathListBuilder.swift; sourceTree = "<group>"; };
+		6B3ABC33273DFA2900C40026 /* ParseError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParseError.swift; sourceTree = "<group>"; };
 		6B748DF927395DC30067DE88 /* MathAtomFactory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathAtomFactory.swift; sourceTree = "<group>"; };
 		6B748DFB27395EEF0067DE88 /* MathAtomType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathAtomType.swift; sourceTree = "<group>"; };
 		6B748DFD273960230067DE88 /* MathFontStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MathFontStyle.swift; sourceTree = "<group>"; };
@@ -76,13 +80,28 @@
 			isa = PBXGroup;
 			children = (
 				6B748DF927395DC30067DE88 /* MathAtomFactory.swift */,
-				6B748DFD273960230067DE88 /* MathFontStyle.swift */,
 				6B748DFB27395EEF0067DE88 /* MathAtomType.swift */,
+				6B748DFD273960230067DE88 /* MathFontStyle.swift */,
+				6B3ABC31273DF9B600C40026 /* MathListBuilder.swift */,
 				6B748DFF2739618A0067DE88 /* MathListIndex.swift */,
-				6B748E03273965190067DE88 /* MathListSubIndexType.swift */,
 				6B748E01273961F70067DE88 /* MathListRange.swift */,
+				6B748E03273965190067DE88 /* MathListSubIndexType.swift */,
+				6B3ABC33273DFA2900C40026 /* ParseError.swift */,
 			);
 			path = lib;
+			sourceTree = "<group>";
+		};
+		6B8E6530273DF3F800D63EA3 /* source */ = {
+			isa = PBXGroup;
+			children = (
+				6BF875A22732A96400FD2AA0 /* internal */,
+				6B748DF827395DB00067DE88 /* lib */,
+				6BF8759E273297F400FD2AA0 /* MathUIView.swift */,
+				6BF875A027329EAA00FD2AA0 /* MathFont.swift */,
+				6B025AE52732BC8500978C9B /* UIColor+Extension.swift */,
+				6B025AE72732C2EC00978C9B /* UnicodeSymbol.swift */,
+			);
+			path = source;
 			sourceTree = "<group>";
 		};
 		6BF8757A273297D700FD2AA0 = {
@@ -106,14 +125,9 @@
 		6BF87586273297D700FD2AA0 /* SwiftMathRender */ = {
 			isa = PBXGroup;
 			children = (
-				6B748DF827395DB00067DE88 /* lib */,
-				6BF875A22732A96400FD2AA0 /* internal */,
-				6BF87587273297D700FD2AA0 /* SwiftMathRender.h */,
+				6B8E6530273DF3F800D63EA3 /* source */,
 				6BF87588273297D700FD2AA0 /* SwiftMathRender.docc */,
-				6BF8759E273297F400FD2AA0 /* MathUIView.swift */,
-				6BF875A027329EAA00FD2AA0 /* MathFont.swift */,
-				6B025AE52732BC8500978C9B /* UIColor+Extension.swift */,
-				6B025AE72732C2EC00978C9B /* UnicodeSymbol.swift */,
+				6BF87587273297D700FD2AA0 /* SwiftMathRender.h */,
 			);
 			path = SwiftMathRender;
 			sourceTree = "<group>";
@@ -251,10 +265,12 @@
 				6B748DFC27395EEF0067DE88 /* MathAtomType.swift in Sources */,
 				6BF875A127329EAA00FD2AA0 /* MathFont.swift in Sources */,
 				6B025AE82732C2EC00978C9B /* UnicodeSymbol.swift in Sources */,
+				6B3ABC34273DFA2900C40026 /* ParseError.swift in Sources */,
 				6B025AE62732BC8500978C9B /* UIColor+Extension.swift in Sources */,
 				6B748DFE273960230067DE88 /* MathFontStyle.swift in Sources */,
 				6BF875A42732A99F00FD2AA0 /* MathFontTable.swift in Sources */,
 				6B748DFA27395DC30067DE88 /* MathAtomFactory.swift in Sources */,
+				6B3ABC32273DF9B600C40026 /* MathListBuilder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
